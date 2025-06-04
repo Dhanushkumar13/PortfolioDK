@@ -10,7 +10,8 @@
     "build": "remix vite:build",
     "dev": "node ./scripts/dev.cjs && remix vite:dev",
     "start": "wrangler pages dev ./build/client",
-    "postinstall": "node ./scripts/draco.cjs"
+    "postinstall": "node ./scripts/draco.cjs",
+    "deploy": "wrangler deploy"
   },
   "dependencies": {
     "@aws-sdk/client-ses": "^3.515.0",
