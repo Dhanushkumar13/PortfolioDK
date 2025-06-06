@@ -4,7 +4,7 @@
   "description": "Portfolio site for Dhanush Kumar",
   "repository": "https://github.com/Dhanushkumar13",
   "author": "Dhanush",
-  "sideEffects": "true",
+  "sideEffects": true,
   "type": "module",
   "scripts": {
     "build": "remix vite:build",
