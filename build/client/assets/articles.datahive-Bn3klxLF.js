@@ -1,0 +1,1 @@
+import{j as n}from"./jsx-runtime-CbkKSL4Y.js";import{u as r}from"./index-BzxHGz_K.js";function o(t){return n.jsx(n.Fragment,{})}function a(t={}){const{wrapper:e}={...r(),...t.components};return e?n.jsx(e,{...t,children:n.jsx(o,{...t})}):o()}export{a as default};
