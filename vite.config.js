@@ -30,11 +30,20 @@ export default defineConfig({
             '@mdx-js/react',
             'three-stdlib'
           ];
-          return modulesWithSideEffects.some(pkg => id.includes(`/node_modules/${pkg}/`));
+          return modulesWithSideEffects.some(pkg => id.includes(`/node_modules/${pkg}`));
         }
       }
     }
   },
+  optimizeDeps: {
+  exclude: [
+    'axios',
+    'isbot',
+    '@remix-run/react',
+    '@mdx-js/react',
+    'three-stdlib'
+  ]
+},
   server: {
     port: 7777,
   },
