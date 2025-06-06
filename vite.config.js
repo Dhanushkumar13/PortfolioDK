@@ -12,12 +12,28 @@ import rehypeSlug from 'rehype-slug';
 import rehypePrism from '@mapbox/rehype-prism';
 import { vercelPreset } from "@vercel/remix/vite"
 import { netlifyPlugin } from "@netlify/remix-adapter/plugin";
+
 const isStorybook = process.argv[1]?.includes('storybook');
 
 export default defineConfig({
   assetsInclude: ['**/*.glb', '**/*.hdr', '**/*.glsl'],
   build: {
     assetsInlineLimit: 1024,
+    rollupOptions: {
+      treeshake: {
+        moduleSideEffects: (id) => {
+          // Keep these modules' side effects
+          const modulesWithSideEffects = [
+            'axios',
+            'isbot',
+            '@remix-run/react',
+            '@mdx-js/react',
+            'three-stdlib'
+          ];
+          return modulesWithSideEffects.some(pkg => id.includes(`/node_modules/${pkg}/`));
+        }
+      }
+    }
   },
   server: {
     port: 7777,
