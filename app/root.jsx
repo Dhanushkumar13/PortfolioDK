@@ -20,8 +20,8 @@ import { Navbar } from '~/layouts/navbar';
 import { Progress } from '~/components/progress';
 import config from '~/config.json';
 import styles from './root.module.css';
-import './reset.css';
-import './global.css';
+import './reset.module.css';
+import './global.module.css';
 
 export const links = () => [
   {
