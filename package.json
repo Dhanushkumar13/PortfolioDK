@@ -37,14 +37,6 @@
     "@mapbox/rehype-prism": "^0.9.0",
     "@mdx-js/rollup": "^3.0.1",
     "@remix-run/dev": "^2.7.1",
-    "@storybook/addon-a11y": "^7.6.17",
-    "@storybook/addon-essentials": "^7.6.17",
-    "@storybook/addon-interactions": "^7.6.17",
-    "@storybook/addon-links": "^7.6.17",
-    "@storybook/blocks": "^7.6.17",
-    "@storybook/react": "^7.6.17",
-    "@storybook/react-vite": "^7.6.17",
-    "@storybook/test": "^7.6.17",
     "@vercel/remix": "^2.9.2-patch.2",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
@@ -52,7 +44,6 @@
     "eslint-plugin-jsx-a11y": "^6.8.0",
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-storybook": "^0.8.0",
     "node-fetch": "^3.3.2",
     "postcss": "^8.4.33",
     "postcss-custom-media": "^10.0.2",
@@ -64,6 +55,6 @@
     "wrangler": "^4.19.1"
   },
   "engines": {
-     "node": "20.10.0"
+    "node": "23.11.0"
   }
 }
