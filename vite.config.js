@@ -20,23 +20,6 @@ export default defineConfig({
   build: {
     assetsInlineLimit: 1024,
   },
-  optimizeDeps: {
-    include: [
-      '@remix-run/react',
-      '@remix-run/cloudflare',
-      'axios',
-      'isbot',
-      'react-dom/server',
-      '@emailjs/browser',
-      'three-stdlib',
-      '@mdx-js/react'
-    ],
-  },
-  build: {
-    rollupOptions: {
-      external: [], // Prevent any dependencies from being treated as external
-    },
-  },
   server: {
     port: 7777,
   },
