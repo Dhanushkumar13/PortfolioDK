@@ -1,14 +1,14 @@
-import { s, f, g, j, h, i, e, p, k } from "./assets/server-build-BI-V1_rt.js";
-
-import jsx from "react/jsx-runtime";
-import remix from "@remix-run/react";
-import isbot from "isbot";
-import server from "react-dom/server";
-import cloudfare from "@remix-run/cloudflare";
-import react from "react";
-import framer from "framer-motion";
-import mdx from "@mdx-js/react";
-
+import { s, f, g, j, h, i, e, p, k } from "./assets/server-build-CYJld8oc.js";
+import runtime from "react/jsx-runtime";
+import "@remix-run/react";
+import "isbot";
+import "react-dom/server";
+import "@remix-run/cloudflare";
+import "react";
+import "framer-motion";
+import "@mdx-js/react";
+import "@emailjs/browser";
+import "axios";
 export {
   s as assets,
   f as assetsBuildDirectory,

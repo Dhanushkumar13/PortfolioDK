@@ -10,7 +10,7 @@
     "build": "remix vite:build",
     "dev": "node ./scripts/dev.cjs && remix vite:dev",
     "start": "wrangler pages dev ./build/client",
-    "postinstall": "node ./scripts/draco.cjs",
+    "postinstall": "node ./scripts/draco.cjs && patch-package",
     "deploy": "wrangler deploy"
   },
   "dependencies": {
@@ -20,7 +20,7 @@
     "@netlify/remix-adapter": "^2.4.0",
     "@remix-run/cloudflare": "^2.7.1",
     "@remix-run/cloudflare-pages": "^2.16.8",
-    "@remix-run/react": "^2.7.1",
+    "@remix-run/react": "^2.16.8",
     "axios": "^1.7.2",
     "framer-motion": "11.0.5",
     "isbot": "^4.1.0",
@@ -45,8 +45,10 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "node-fetch": "^3.3.2",
+    "patch-package": "^8.0.0",
     "postcss": "^8.4.33",
     "postcss-custom-media": "^10.0.2",
+    "postinstall-postinstall": "^2.1.0",
     "prop-types": "^15.8.1",
     "remark-frontmatter": "^5.0.0",
     "remark-mdx-frontmatter": "^4.0.0",
