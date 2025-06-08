@@ -2,7 +2,7 @@ node_modules
 
 /.cache
 .env
-build
+build/client/assets
 
 .wrangler
 .dev.vars
