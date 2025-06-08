@@ -3168,9 +3168,21 @@ const styles$6 = {
   mobileScrollIndicator,
   introMobileScrollIndicator
 };
-const DisplacementSphere = lazy(
-  () => import("./displacement-sphere-hMH1Ftv3.js").then((module) => ({ default: module.DisplacementSphere }))
-);
+// const DisplacementSphere = lazy(
+//   () => import("./displacement-sphere-hMH1Ftv3.js").then((module) => ({ default: module.DisplacementSphere }))
+// );
+
+const modules = import.meta.glob('./displacement-sphere-*.js');
+
+const DisplacementSphere = lazy(async () => {
+  const paths = Object.keys(modules);
+  if (!paths.length) {
+    throw new Error('No displacement-sphere module found');
+  }
+  const module = await modules[paths[0]](); // Assuming only one file matches
+  return { default: module.DisplacementSphere };
+});
+
 function Intro({ id, sectionRef, scrollIndicatorHidden, ...rest }) {
   const { theme } = useTheme();
   const { disciplines: disciplines2 } = config;
