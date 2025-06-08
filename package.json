@@ -4,7 +4,12 @@
   "description": "Portfolio site for Dhanush Kumar",
   "repository": "https://github.com/Dhanushkumar13",
   "author": "Dhanush",
-  "sideEffects": true,
+  "sideEffects": [
+  "./build/server/assets/displacement-sphere--*.js",
+  "./build/server/index.js",
+  "./scripts/dev.cjs",
+  "./scripts/draco.cjs"
+  ],
   "type": "module",
   "scripts": {
     "build": "remix vite:build",
