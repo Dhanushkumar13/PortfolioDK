@@ -1,13 +1,8 @@
 import { s, f, g, j, h, i, e, p, k } from "./assets/server-build-BI-V1_rt.js";
-import "react/jsx-runtime";
-import "@remix-run/react";
-import "isbot";
-import "react-dom/server";
-import "@remix-run/cloudflare";
-import "react";
-import "framer-motion";
-import "@mdx-js/react";
-import "axios";
+import { jsx } from "react/jsx-runtime";
+import ReactDOMServer from "react-dom/server";
+import { RemixServer } from "@remix-run/react";
+
 export {
   s as assets,
   f as assetsBuildDirectory,
