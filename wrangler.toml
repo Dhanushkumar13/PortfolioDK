@@ -1,3 +1,9 @@
 kv_namespaces = [
-  { id = "MY_KV", binding="MY_KV" }
+  { id = "MY_KV", binding = "MY_KV" }
 ]
+
+# Required for Cloudflare Pages build
+pages_build_output_dir = "./build/client"
+
+# (Optional but recommended)
+compatibility_date = "2024-06-08"
